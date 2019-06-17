@@ -1,118 +1,119 @@
 %!TEX TS-program = lualatex
-%% The MIT License (MIT)
-%%
-%% Copyright (c) 2015 Daniil Belyakov
-%%
-%% Permission is hereby granted, free of charge, to any person obtaining a copy
-%% of this software and associated documentation files (the "Software"), to deal
-%% in the Software without restriction, including without limitation the rights
-%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-%% copies of the Software, and to permit persons to whom the Software is
-%% furnished to do so, subject to the following conditions:
-%%
-%% The above copyright notice and this permission notice shall be included in all
-%% copies or substantial portions of the Software.
-%%
-%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-%% SOFTWARE.
 
 % The font could be set to Windows-specific Calibri by using the 'calibri' option
 \documentclass[]{mcdowellcv}
 
 % For mathematical symbols
 \usepackage{amsmath}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+}
 
 % Set applicant's personal data for header
 \name{Olzhas Arystanov}
-\address{28 Taugul-2 neighbourhood, apt. 15 \linebreak Almaty, Kazakhstan 050042}
-\contacts{+7 (701) 736-7551 \linebreak o.arystanov@gmail.com}
+\address{28 Taugul-2 nbhd apt 15 \linebreak Almaty, Kazakhstan 050042 \linebreak Willing to relocate}
+\contacts{+7 (701) 736-7551 \linebreak o.arystanov@gmail.com \linebreak \href{https://github.com/olzhasar}{github.com/olzhasar}}
 
 \begin{document}
 
-	% Print the header
-	\makeheader
-	
-	% Print the content
-	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Software Engineer, Intern}{Apple Computer}{Summer 2004}
-			iChat AV			
-			\begin{itemize}
-				\item Reduced time to render the user’s buddy list by 75\% by implementing prediction algorithm.
-				\item Implemented iChat integration with OS X Spotlight Search by creating tool which extracts metadata from saved chat transcripts and provides metadata to a system-wide search database.
-				\item Redesigned chat file format and implemented backwards compatibility for search.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Lead Student Ambassador}{Microsoft Corporation}{Fall 2003 -- Spring 2005}	
-			\begin{itemize}
-				\item Promoted to Lead Student Ambassador in Fall 2004; supervised 10 -- 15 Student Ambassadors.
-				\item Created and taught Computer Science course, CSE 099: Software Design and Development.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Head Teaching Assistant}{University of Pennsylvania}{Fall 2001 -- Spring 2005}		
-			\begin{itemize}
-				\item Courses: Advanced Java III, Software Engineering, Mathematical Foundations of Computer Science I \& II.
-				\item Promoted to Head TA in Fall 2004; led weekly meetings and supervised four other TAs.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Software Design Engineer, Intern}{Microsoft Corporation}{Summers 2001 -- 2003}
-			Visual Studio Core (Summer 2003)		
-			\begin{itemize}
-				\item Implemented a user interface for the VS open file switcher (ctrl-tab) and extended it to tool windows.
-				\item Created service to provide gradient across VS and VS add-ins. Optimized service via caching.
-			\end{itemize}
-			Programmer Productivity Research Center (Summers 2001, 2002)
-			\begin{itemize}
-				\item Built app to compute similarity of all methods in a code base; reduced time from $O(n^2)$ to $O(n\ log\ n)$. 
-				\item Created test case generation tool which creates random XML docs from XML Schema.
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-	\begin{cvsection}{Education}
-		\begin{cvsubsection}{Philadelphia, PA}{University of Pennsylvania}{Fall 2000 -- May 2005}
-			\begin{itemize}
-				\item M.S.E. in Computer and Information Science, May 2005. GPA: 3.6
-				\item B.S.E. in Computer Science Engineering with Minor in Mathematics, May 2005.  In-major GPA: 3.4.
-				\item Graduate Coursework: Software Foundations; Computer Architecture; Algorithms; Artificial Intelligence; Comparison of Learning Algorithms; Computational Theory.
-				\item Undergraduate Coursework: Operating Systems; Databases; Algorithms; Programming Languages; Comp. Architecture; Engineering Entrepreneurship; Calculus III.
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-	\begin{cvsection}{Technical Experience}
-		\begin{cvsubsection}{Projects}{}{}
-			\begin{itemize}
-				\item \textbf{Multi-User Drawing Tool} (2004). Electronic classroom where multiple users can view and simultaneously draw on a “chalkboard” with each person’s edits synchronized.  C++, MFC
-				\item \textbf{Synchronized Calendar} (2003 – 2004). Desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users.  C\#.NET, SQL, XML
-				\item \textbf{Operating System} (2002).  UNIX-style OS with scheduler, file system, text editor and calculator. C
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-	\begin{cvsection}{Additional Experience and Awards}
-		\begin{cvsubsection}{}{}{}	
-			\begin{itemize}
-				\item \textbf{Instructor (2003 – 2005):} Taught two full-credit Computer Science courses; average ratings of 4.8 out of 5.0.
-				\item \textbf{Third Prize, Senior Design Projects:} Awarded 3rd prize for Synchronized Calendar project, out of 100 projects.
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-	\begin{cvsection}{Languages and Technologies}
-		\begin{cvsubsection}{}{}{}	
-			\begin{itemize}
-				\item C++; C; Java; Objective-C; C\#.NET; SQL; JavaScript; XSLT; XML (XSD) Schema 
-				\item Visual Studio; Microsoft SQL Server; Eclipse; XCode; Interface Builder
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
+% Print the header
+\makeheader
+
+% Print the content
+\begin{cvsection}{Professional Experience}
+  \begin{cvsubsection}{Software Engineer}{Freelance}{2016 -- present}
+    \begin{itemize}
+      \item Designed and developed financial comparison website (Django, vue.js, bulma)
+      \item Constructed an application for storing finacial market data and consuming via API (Flask, pandas, docker)
+      \item Developed e-commerce website for a furniture company (Django, django-oscar, bootstrap)
+      \item Developed custom website for interior design agency (Django, Wagtail)
+      \item Built custom e-commerce engine for a flower shop (Django, bootstrap, javascript). Implemented integration with email delivery service API and payment processing gateway
+      \item Configured linux servers webfaction, linode and successfully deployed Python apps
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Business Consultant}{Integris Capital}{2017 -- 2018}	
+    \begin{itemize}
+      \item Developed strategic solutions for various customers from business and non-profit sectors
+      \item Work with executives of business entities in order to achieve success
+      \item Consulted a top Kazakhstan university on creating an innovative science park. Developed business plan and marketing strategy
+      \item Built a comprehensive financial model for an innovative startup in mining industry to raise funds from public and private investors
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Director, Asset Management}{SkyBridge Invest}{August 2016 -- March 2017}		
+    \begin{itemize}
+      \item Research, back-test and program quantitative investment strategies. Introduced a quantitative approach to managing capital
+      \item Sucessfully launched into production an investment strategy based on combination of different alpha factors (Momentum, Growth, Value)
+      \item Worked closely with a trade desk on regular portfolio rebalancing
+      \item Performed research and presented investment recommendations on various investment opportunities
+      \item Automated preparation of division's paperwork using MS Excel and Bloomberg API
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Director, Risk Management}{SkyBridge Invest}{May 2015 -- August 2016}		
+    \begin{itemize}
+      \item Identified, evaluated and controlled key risks (market risk, interest rate risk, liquidity risk, credit risk, country risk, operational risk) of portfolios under management
+      \item Report market risk exposure internally and to federal regulatory agency
+      \item Designed complete product requirements document for risk management software developers
+      \item Renewed and improved risk management methodologies to fully suit company needs
+      \item Ensure compliance of corporate risk management policies with legislative changes
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Executive Director}{RFCA Ratings}{August 2013 -- January 2015}
+    \begin{itemize}
+      \item Sell rating products to public companies and maintain customer relationships
+      \item Designed and marketed a new rating product for insurance companies
+      \item Implemented weighted factor approach for assigning rating grades
+      \item Coordinate work of analytical division. Screen, interview and hire analysts
+      \item Organize meetings of the Rating Committee consisting of external members
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Risk Manager}{Kazkom Securities}{June 2012 -- July 2013}
+    \begin{itemize}
+      \item Measure and quantify market, credit, liquidity and interest rate risks of investment portfolios
+      \item Monitor asset allocation limits and work with asset manager and trading desk to resolve limit breaches
+      \item Report market risk exposure internally and to federal regulatory agency
+      \item Ensure compliance of corporate risk management policies with market legislation
+      \item Increased operational efficiency by developing comprehensive spreadsheets with macros and integrating new risk management software
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\pagebreak
+
+\begin{cvsection}{Education}
+  \begin{cvsubsection}{Almaty, KZ}{KIMEP}{Fall 2007 -- May 2011}
+    \begin{itemize}
+      \item BS in Business Administration and Accounting with Major in \textbf{Finance}
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Skills}
+  \begin{cvsubsection}{Technologies and Software}{}{}	
+      \begin{itemize}
+        \item Back-end: Python, Django, Flask, Django-rest-framework, PostgreSQL
+        \item Front-end: Javascript, Css, Sass, vue.js, jQuery, Bootstrap, Bulma
+        \item Data science: pandas, numpy, matplotlib, jupyter notebook, beatuifulsoup
+        \item Git, Linux cli, Docker, AWS
+        \item MS Excel(advanced), Bloomberg Terminal
+      \end{itemize}
+  \end{cvsubsection}
+  \begin{cvsubsection}{Languages}{}{}	
+    \begin{itemize}
+      \item \textbf{English} - Advanced
+      \item \textbf{Russian} - Fluent
+      \item \textbf{Kazakh} - Native
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+
 \end{document}
