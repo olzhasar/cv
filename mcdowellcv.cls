@@ -138,7 +138,7 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 	\typeout {kokoko}
 	\typeout \spaceskip
 	\spaceskip \namespaceskip \relax
-	\textbf{\LARGE\textls[110]{\textsc{\@name}}}
+	\textbf{\LARGE\textls[110]{\@name}}
 }
 
 \makeatother
@@ -176,7 +176,7 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 	\vspace*{\beforesectionheaderspace}
 	% Set text margins to equal \tabcolsep (6pt by default)
 	\begin{adjustwidth}{\sectionheadermargin}{\sectionheadermargin}
-		\textsc{\textbf{#1}}
+		\textbf{#1}
 	\end{adjustwidth}
 	\vspace*{\beforesectionheaderhrulespace}
 	\hrule height \sectionheaderhrlueheight
