@@ -16,7 +16,7 @@
 % Set applicant's personal data for header
 \name{Olzhas Arystanov}
 \address{28 Taugul-2 nbhd apt 15 \linebreak Almaty, Kazakhstan 050042 \linebreak Looking for remote job opportunities / relocation}
-\contacts{+7 (701) 736-7551 \linebreak o.arystanov@gmail.com \linebreak \href{https://olzhasar.github.io}{olzhasar.github.io}}
+\contacts{+7 (701) 736 7551 \linebreak o.arystanov@gmail.com \linebreak \href{https://olzhasar.github.io}{olzhasar.github.io}}
 
 \begin{document}
 
@@ -25,14 +25,44 @@
 
 % Print the content
 \begin{cvsection}{Professional Experience}
-  \begin{cvsubsection}{Middle Software Engineer}{Trafficwave}{2019 -- present}
+  
+  \begin{cvsubsection}{Software Engineer}{360bound Inc.}{2021 -- present}
+    \begin{itemize}
+      \item Development of competitive gaming platform for US market (\href{https://gather.gg/}{https://gather.gg/})
+      \item Work with large Django codebase (Django + DRF + Postgres + Celery + RabbitMQ + Redis)
+      \item Communicate with business team in an agile environment
+      \item Implement and ship new product features
+      \item Write integration and unit tests
+      \item Conduct code reviews and guide junior developers
+      \item Optimize database queries and project architecture
+      \item Refactor legacy code
+      \item Proposed improvements to existing development process
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Backend Engineer}{InvestEngine}{2020 -- 2021}
+    \begin{itemize}
+      \item Working with large Django-based application (Django + DRF + RQ + Redis + MySQL)
+      \item Develop new product features according to business requirements
+      \item Cover all produced code with unit and integration tests
+      \item Implemented custom processing system for financial transactions
+      \item Connect various third-party APIs for exchanging financial data
+      \item Optimized and significantly reduced runtime for several thousand backend tests
+      \item Performed refactoring of legacy codeabse
+      \item Present work results to a business team
+      \item Perform regular code reviews
+      \item Proactively suggest ways to improve existing development process
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Middle Software Engineer}{Trafficwave}{2019 -- 2020}
     \begin{itemize}
       \item Develop backend for financial applications
       \item Programming customizable business logic for credit scoring systems
       \item Design complex background task pipelines with Celery
       \item Build REST APIs covered by Swagger documentation
       \item Integrate external services via REST, SOAP
-      \item Develop and maintain an e-commerce platform for grocery store \href{https://marco.kz/}{marco.kz}
+      \item Develop and maintain an e-commerce platform for a grocery store \href{https://marco.kz/}{marco.kz}
       \item Working with monolith and microservices-based architectures
       \item Write unit and integration tests
       \item Create and optimize custom docker images
@@ -42,52 +72,18 @@
 
   \begin{cvsubsection}{Software Engineer}{Freelance}{2016 -- 2019}
     \begin{itemize}
-      \item Design and develop financial comparison website (Django, vue.js, bulma) - Jun 2019
-      \item Constructed application for storing financial market data and consuming via API (Flask, pandas, docker) - Oct 2018
-      \item Developed e-commerce website for a furniture company (Django, django-oscar, bootstrap) - Aug 2018
-      \item Developed custom website for interior design agency (Django, wagtail) - May 2018
-      \item Built custom e-commerce engine for a flower shop (Django, bootstrap, javascript). Implemented integration with email delivery service API and payment processing gateway - Jun 2016
-      \item Configured Linux servers on webfaction, linode and successfully deployed Python apps
+      \item Working independently on various web applications (e-commerce, fintech, corporate websites)
+      \item Develop backend with Django, Flask
+      \item Develop dynamic frontends with Vue.js
+      \item Develop static frontends with Html, CSS, Javascript, JQuery
+      \item Configure CI/CD pipeline using Github Actions
+      \item Deploy applications on cloud Linux servers (linode, webfaction, etc.)
     \end{itemize}
   \end{cvsubsection}
 
-  \begin{cvsubsection}{Business Consultant}{Integris Capital}{2017 -- 2018}	
-    \begin{itemize}
-      \item Developed strategic solutions for public and private sector clients
-      \item Consulted a top Kazakhstan university on creating innovative science park. Developed a business plan and marketing strategy
-      \item Built a robust financial model for an innovative mining startup to raise funds from public and private investors
-    \end{itemize}
+  \begin{cvsubsection}{Investment Banking Career}{}{2011-2016}
   \end{cvsubsection}
 
-  \begin{cvsubsection}{Director, Asset Management}{SkyBridge Invest}{May 2015 -- March 2017}		
-    \begin{itemize}
-      \item Research, back-test and program quantitative investment strategies using Python
-      \item Successfully launched into production an investment strategy based on a combination of different alpha factors (Momentum, Growth, Value)
-      \item Work closely with a trading desk on regular portfolio rebalancing. Ensure proper trades execution
-      \item Perform research and present investment recommendations on various investment opportunities
-      \item Automated preparation of internal paperwork using MS Excel and Bloomberg API
-    \end{itemize}
-  \end{cvsubsection}
-
-  \begin{cvsubsection}{Executive Director}{RFCA Ratings}{August 2013 -- January 2015}
-    \begin{itemize}
-      \item Sell rating products to public companies and maintain customer relationships
-      \item Designed and marketed a new rating product for insurance companies
-      \item Implemented a weighted factor approach for assigning rating grades
-      \item Supervised team of analysts. Screen, interview and hire employees
-      \item Organize meetings of the Rating Committee consisting of external members
-    \end{itemize}
-  \end{cvsubsection}
-
-  \begin{cvsubsection}{Risk Manager}{Kazkom Securities}{June 2012 -- July 2013}
-    \begin{itemize}
-      \item Measure and quantify market, credit, liquidity and interest rate risks of investment portfolios
-      \item Monitor asset allocation limits and work with the asset manager and trading desk on resolving limit breaches
-      \item Report market risk exposure internally and to federal regulatory agency
-      \item Ensure compliance of corporate risk management policies with market legislation
-      \item Increased operational efficiency by developing comprehensive spreadsheets with macros and integrating new risk management software
-    \end{itemize}
-  \end{cvsubsection}
 \end{cvsection}
 
 \pagebreak
@@ -103,16 +99,20 @@
 \begin{cvsection}{Skills}
   \begin{cvsubsection}{Technologies and Software}{}{}	
       \begin{itemize}
-        \item Back-end: Python, Django, Flask, Django-rest-framework, Celery, PostgreSQL, RabbitMQ, Redis
-        \item Front-end: Javascript, Css, Sass, vue.js, jQuery, Bootstrap, Bulma
-        \item Data science: pandas, numpy, matplotlib, jupyter notebook, beatuifulsoup
-        \item Git, Linux cli, Docker, Vim
+	\item Programming languages: Python, C, Javascript
+	\item Backend:  Django, DRF, FastAPI, Flask, Celery, RQ
+	\item Databases, messaging: PostgreSQL, MySQL, MongoDB, Redis, RabbitMQ
+        \item Front-end: Vue.js, Sass
+        \item Data science: pandas, numpy, matplotlib, plotly
+	\item Linux Shell, Bash
+	\item Docker
+        \item Vim
         \item MS Excel(advanced), Bloomberg Terminal
       \end{itemize}
   \end{cvsubsection}
   \begin{cvsubsection}{Languages}{}{}	
     \begin{itemize}
-      \item \textbf{English} - Advanced
+      \item \textbf{English} - Fluent
       \item \textbf{Russian} - Fluent
       \item \textbf{Kazakh} - Native
     \end{itemize}
